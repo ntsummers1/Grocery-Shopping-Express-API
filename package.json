@@ -1,0 +1,24 @@
+{
+  "name": "grocery-shopping-api-db",
+  "version": "1.0.0",
+  "description": "Node.js Resful CRUD API using Node.js, Express, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "rest",
+    "api"
+  ],
+  "author": "ntsummers",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  }
+}
