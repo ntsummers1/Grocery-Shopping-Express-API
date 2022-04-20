@@ -9,74 +9,43 @@
 This project was created using Node.js, Express, and MongoDB. Its a Restful CRUD api that allows the user to fetch products from a grocery store and have them returned in a json output. An example of what fetching all the products looks like is as follows: 
 
 ```
-[
+{
+ "categories": ["All", "Snacks", "Fruits", "Vegetables", "Beverages", "Fish", "Meat", "Household", "Pharmacy"],  
+ "products" : [
     {
-        "_id": "625e0d011b7bcfac4e9ad051",
-        "name": "Doritos Tor. Chips Cool Ranch",
-        "price": 3.59,
-        "category": [
-            "Snacks"
-        ],
-        "instock": true,
-        "img": "imgs/doritos-cool-ranch.png",
-        "__v": 0
+      "id": 1,
+      "name": "Doritos Tor. Chips Cool Ranch",
+      "price": 3.59,
+      "category": ["Snacks"],
+      "instock": true,
+      "img": "imgs/doritos-cool-ranch.png"
     },
     {
-        "_id": "625e0d0f1b7bcfac4e9ad053",
-        "name": "Doritos Tor. Chips Flamin Hot",
-        "price": 3.59,
-        "category": [
-            "Snacks"
-        ],
-        "instock": true,
-        "img": "imgs/doritos-flamin-hot.png",
-        "__v": 0
+      "id": 2,
+      "name": "Doritos Tor. Chips Flamin Hot",
+      "price": 3.59,
+      "category": ["Snacks"],
+      "instock": true,
+      "img": "imgs/doritos-flamin-hot.png"
     },
     {
-        "_id": "625e0d151b7bcfac4e9ad055",
-        "name": "Doritos Tor. Chips Nacho Cheese",
-        "price": 3.59,
-        "category": [
-            "Snacks"
-        ],
-        "instock": true,
-        "img": "imgs/doritos-nacho-cheese.png",
-        "__v": 0
+      "id": 86,
+      "name": "Organic Lemons by the pound",
+      "price": 0.39,
+      "category": ["Fruits"],
+      "instock": true,
+      "img": "imgs/lemon.png"
     },
     {
-        "_id": "625e0d1c1b7bcfac4e9ad057",
-        "name": "Doritos Tor. Chips Salsa Verde",
-        "price": 3.59,
-        "category": [
-            "Snacks"
-        ],
-        "instock": true,
-        "img": "imgs/doritos-salsa-verde.png",
-        "__v": 0
-    },
-    {
-        "_id": "625e0d211b7bcfac4e9ad059",
-        "name": "Herrs Crisp and Tasty Tor. Chips",
-        "price": 2.99,
-        "category": [
-            "Snacks"
-        ],
-        "instock": true,
-        "img": "imgs/herrs-crisp-tasty.png",
-        "__v": 0
-    },
-    {
-        "_id": "625e0d2b1b7bcfac4e9ad05b",
-        "name": "Herrs Red Hot Tor. Chips",
-        "price": 2.99,
-        "category": [
-            "Snacks"
-        ],
-        "instock": true,
-        "img": "imgs/herrs-red-hot.png",
-        "__v": 0
+      "id": 82,
+      "name": "Organic Kiwi Fruit by the pound",
+      "price": 0.63,
+      "category": ["Fruits"],
+      "instock": true,
+      "img": "imgs/kiwi.png"
     }
-]
+  ]
+}
 ```
 
 There are also routes in this API to handle finding products by name, adding new products to the DB, deleting products, deleting all products, and updating products.
